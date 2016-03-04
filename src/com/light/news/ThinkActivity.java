@@ -32,10 +32,10 @@ public class ThinkActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.think_activity);
 		Log.i(TAG, "ThinkActivity --> onCreate");
 		
-		lunchBtn = (Button) findViewById(R.id.btn_start_think_second);
+		lunchBtn = (Button) findViewById(R.id.btn_lunch_second);
 		
 		lunchBtn.setOnClickListener(new OnClickListener() {
 			

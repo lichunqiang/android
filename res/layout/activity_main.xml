@@ -10,7 +10,7 @@ match_parent：当前控件铺满父类容器 - 2.3api之后添加的一个属�
 fill_parent: 当前控件铺满父类容器 - 2.3之前
 -->
 
-    <EditText
+    <!--<EditText
         android:id="@+id/editText1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,43 +31,24 @@ fill_parent: 当前控件铺满父类容器 - 2.3之前
             android:contentDescription="@string/app_name"
             android:src="@drawable/ic_launcher" />
 
-    </LinearLayout>
+    </LinearLayout> -->
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/btn_show_open_activity"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:text="Intent实现页面跳转" />
 
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/ok_button" />
+    <Button
+        android:id="@+id/btn_show_think_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="理解Activity生命周期" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/cancel_button" />
-
-        <ImageButton
-            android:id="@+id/imageButton1"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_launcher"
-            android:background="#dfdfdf" />
-
-    </LinearLayout>
-
-    <ToggleButton
-        android:id="@+id/toggleButton1"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/btn_show_toggle_button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ToggleButton" />
-	
-    <Button
-            android:id="@+id/btn_start_think_second"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="启动Activity" />
+    
 </LinearLayout>

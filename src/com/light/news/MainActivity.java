@@ -1,16 +1,16 @@
 package com.light.news;
 
-import com.light.news.events.TestEvent;
+import com.light.news.common.ShowChildActivity;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
 
 public class MainActivity extends Activity {
 	
-	private Button loginButton;
+	private Button showPopActivitybtn;
+	private Button showThinkActivityBtn;
+	private Button showToggleButton;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,32 +24,17 @@ public class MainActivity extends Activity {
         * 2.
         */
         
-        loginButton = (Button) findViewById(R.id.button1);
+        showPopActivitybtn = (Button) findViewById(R.id.btn_show_open_activity);
+        showThinkActivityBtn = (Button) findViewById(R.id.btn_show_think_activity);
+        showToggleButton = (Button) findViewById(R.id.btn_show_toggle_button);
         
         initEvents();
-        
-        TestEvent event = new TestEvent();
     }
     
     protected void initEvents() {
-    	/**
-    	 * 匿名类的方式
-    	 */
-    	loginButton.setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View arg0) {
-				System.out.println("clicked");
-				
-			}
-		});
-    }
-    
-    protected void loginClicked()
-    {
-    	
-    }
-    
-    
+    	showPopActivitybtn.setOnClickListener(new ShowChildActivity(this, FActivity.class));
+    	showThinkActivityBtn.setOnClickListener(new ShowChildActivity(this, ThinkActivity.class));
+    	showToggleButton.setOnClickListener(new ShowChildActivity(this, ToggleButtonActivity.class));
+    }	
 
 }

@@ -17,39 +17,50 @@
             android:name="com.light.news.MainActivity"
             android:label="@string/app_name" >
             
-           
-        </activity>
-        
-        <activity
-            android:name="com.light.news.FActivity"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.light.news.SActivity"
-            android:label="@string/app_name" >
-        </activity>
-        
-        <activity
-            android:name="com.light.news.ThinkActivity"
-            android:label="@string/app_name" >
-            
-            
-        </activity>
-        <activity
-            android:name="com.light.news.ThinkSecondActivity"
-            android:theme="@android:style/Theme.DeviceDefault.Dialog"
-            android:label="@string/app_name" >
-        </activity>
-        
-         <activity
-            android:name="com.light.news.ToggleButtonActivity"
-            android:label="toggleButton的例子" >
             <!-- 指定启动程序时的页面 -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.light.news.FActivity"
+            android:label="新建Activity" >
+        </activity>
+        <activity
+            android:name="com.light.news.SActivity"
+            android:label="二级Activity" >
+        </activity>
+        
+        <activity
+            android:name="com.light.news.ThinkActivity"
+            android:label="理解Activity的生命周期" >
+            
+            
+        </activity>
+        <activity
+            android:name="com.light.news.ThinkSecondActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog"
+            android:label="理解Activity生命周期子窗口" >
+        </activity>
+        
+         <activity
+            android:name="com.light.news.ToggleButtonActivity"
+            android:label="toggleButton的例子" >
+           
+        </activity>
+        
+         <activity
+            android:name="com.light.news.forms.CheckboxActivity"
+            android:label="checkbox的例子" >
+           
+        </activity>
+        <activity
+            android:name="com.light.news.forms.RadioGroupActivity"
+            android:label="RadioGroup的例子" >
+           
         </activity>
         
     </application>
