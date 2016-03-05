@@ -28,8 +28,8 @@ public class FActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				// µÚÒ»²ÎÊıÉÏÏÂÎÄ¶ÔÏó
-				// µÚ¶ş¸ö²ÎÊıÄ¿±êÎÄ¼ş
+				// ç¬¬ä¸€å‚æ•°ä¸Šä¸‹æ–‡å¯¹è±¡
+				// ç¬¬äºŒä¸ªå‚æ•°ç›®æ ‡æ–‡ä»¶
 				Intent intent = new Intent(FActivity.this, SActivity.class);
 				startActivity(intent);
 				
@@ -51,11 +51,11 @@ public class FActivity extends Activity {
 	}
 	
 	/**
-	 * Í¨¹ıstartActivityForResultÌø×ª
-	 * requestCode: ÇëÇóµÄ±êÊ¶
-	 * resultCode: µÚ¶ş¸öÒ³Ãæ·µ»ØµÄ±êÊ¶
-	 * data: µÚ¶ş¸öÒ³Ãæ»Ø´«µÄÊı¾İ
-	 */
+	* é€šè¿‡startActivityForResultè·³è½¬
+	* requestCode: è¯·æ±‚çš„æ ‡è¯†
+	* resultCode: ç¬¬äºŒä¸ªé¡µé¢è¿”å›çš„æ ‡è¯†
+	* data: ç¬¬äºŒä¸ªé¡µé¢å›ä¼ çš„æ•°æ®
+	*/
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		// TODO Auto-generated method stub

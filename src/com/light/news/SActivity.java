@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class SActivity extends Activity {
 	private Button btn;
-	private String content = "ÄãºÃ";
+	private String content = "ä½ å¥½ï¼Œè¿™æ˜¯ç¬¬äºŒé¡µé¢å›ä¼ å€¼";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,7 @@ public class SActivity extends Activity {
 		setContentView(R.layout.sactivity);
 		
 		/**
-		 * »Ø´«µ½Ò³Ãæ1Êµ¼ÊÉÏÊÇÒ»¸öIntent¶ÔÏó
+		 * å›ä¼ åˆ°é¡µé¢1å®é™…ä¸Šæ˜¯ä¸€ä¸ªIntentå¯¹è±¡
 		 */
 		btn = (Button) findViewById(R.id.second_page_button1);
 		btn.setOnClickListener(new OnClickListener() {

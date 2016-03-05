@@ -15,14 +15,11 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //将布局XML文件引入到activity
         setContentView(R.layout.activity_main);
-       /**
-        * 1. 初始化当前所需要的控件 
-        * 	findViewById - 返回是一个View对象,转化成Button
-        * 
-        * 2.
-        */
+        /**
+         * 1. 鍒濆鍖栧綋鍓嶆墍闇�瑕佺殑鎺т欢 
+         * 	findViewById - 杩斿洖鏄竴涓猇iew瀵硅薄,杞寲鎴怋utton
+         */
         
         showPopActivitybtn = (Button) findViewById(R.id.btn_show_open_activity);
         showThinkActivityBtn = (Button) findViewById(R.id.btn_show_think_activity);

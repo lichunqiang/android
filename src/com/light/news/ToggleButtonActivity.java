@@ -16,11 +16,11 @@ public class ToggleButtonActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.toggle_button_activity);
 		
-		//³õÊ¼»¯¿Ø¼ş
+		//åˆå§‹åŒ–æ§ä»¶
 		btn = (ToggleButton) findViewById(R.id.toggleButton1);
 		iv = (ImageView) findViewById(R.id.imageView1);
 		
-		//ÉèÖÃ¼àÌıÊÂ¼ş
+		//è®¾ç½®ç›‘å¬äº‹ä»¶
 		btn.setOnCheckedChangeListener(new ToggleButtonEvent(iv));
 	}
 }

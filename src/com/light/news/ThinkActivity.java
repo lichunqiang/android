@@ -9,20 +9,20 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 /**
- * ActivityµÄÉúÃüÖÜÆÚ
- * onCreate
- * onStart
- * onResume - »ñÈ¡½¹µã£¬ÏÔÊ¾µ½½çÃæ×î¶¥¶Ë
- * onPause - Ê§È¥½¹µã - µ¯³öÒ»¸ödialogÊ±
- * onStop - µ¯³öÒ»¸öĞÂµÄactivity
- * onDestory
- * onRestart
- * 
- * »î¶¯×´Ì¬ - Active/Running Activity´¦ÓÚ½çÃæµÄ×î¶¥¶Ë,»ñÈ¡½¹µã
- * ÔİÍ£×´Ì¬ (paused) ActivityÊ§È¥½¹µã£¬µ«¶ÔÓÃ»§¿É¼û
- * Í£Ö¹×´Ì¬ (Stopped) Activity±»ÍêÈ«ÕÚµ²£¬µ«±£ÁôËùÓĞ×´Ì¬ºÍ³ÉÔ±ĞÅÏ¢
- * ·Ç»î¶¯×´Ì¬ (Killed) Activity ±»Í£Ö¹£¬µ÷ÓÃÁË onDestory.
- */
+* Activityçš„ç”Ÿå‘½å‘¨æœŸ
+* onCreate
+* onStart
+* onResume - è·å–ç„¦ç‚¹ï¼Œæ˜¾ç¤ºåˆ°ç•Œé¢æœ€é¡¶ç«¯
+* onPause - å¤±å»ç„¦ç‚¹ - å¼¹å‡ºä¸€ä¸ªdialogæ—¶
+* onStop - å¼¹å‡ºä¸€ä¸ªæ–°çš„activity
+* onDestory
+* onRestart
+* 
+* æ´»åŠ¨çŠ¶æ€ - Active/Running Activityå¤„äºç•Œé¢çš„æœ€é¡¶ç«¯,è·å–ç„¦ç‚¹
+* æš‚åœçŠ¶æ€ (paused) Activityå¤±å»ç„¦ç‚¹ï¼Œä½†å¯¹ç”¨æˆ·å¯è§
+* åœæ­¢çŠ¶æ€ (Stopped) Activityè¢«å®Œå…¨é®æŒ¡ï¼Œä½†ä¿ç•™æ‰€æœ‰çŠ¶æ€å’Œæˆå‘˜ä¿¡æ¯
+* éæ´»åŠ¨çŠ¶æ€ (Killed) Activity è¢«åœæ­¢ï¼Œè°ƒç”¨äº† onDestory.
+*/
 public class ThinkActivity extends Activity {
 	final String TAG = "tag";
 	
