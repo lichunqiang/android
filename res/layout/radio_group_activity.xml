@@ -2,7 +2,34 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="@dimen/main_horizontal_margin"
     android:orientation="vertical" >
-    
+
+    <TextView
+        android:id="@+id/hob_desc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/mb_10"
+        android:text="请选择你的爱好："
+        android:textSize="@dimen/label_text" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radio_group_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="篮球" />
+
+        <RadioButton
+            android:id="@+id/radio_group_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="足球" />
+    </RadioGroup>
 
 </LinearLayout>
