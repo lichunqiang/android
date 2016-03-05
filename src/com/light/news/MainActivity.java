@@ -1,6 +1,8 @@
 package com.light.news;
 
 import com.light.news.common.ShowChildActivity;
+import com.light.news.forms.CheckboxActivity;
+import com.light.news.forms.RadioGroupActivity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -11,6 +13,8 @@ public class MainActivity extends Activity {
 	private Button showPopActivitybtn;
 	private Button showThinkActivityBtn;
 	private Button showToggleButton;
+	private Button showCheckboxButton;
+	private Button showRadioGroupButton;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +28,10 @@ public class MainActivity extends Activity {
         showPopActivitybtn = (Button) findViewById(R.id.btn_show_open_activity);
         showThinkActivityBtn = (Button) findViewById(R.id.btn_show_think_activity);
         showToggleButton = (Button) findViewById(R.id.btn_show_toggle_button);
+        showCheckboxButton = (Button) findViewById(R.id.btn_show_checkbox_button);
+        showRadioGroupButton = (Button) findViewById(R.id.btn_show_radio_group_button);
         
+        //init events.
         initEvents();
     }
     
@@ -32,6 +39,8 @@ public class MainActivity extends Activity {
     	showPopActivitybtn.setOnClickListener(new ShowChildActivity(this, FActivity.class));
     	showThinkActivityBtn.setOnClickListener(new ShowChildActivity(this, ThinkActivity.class));
     	showToggleButton.setOnClickListener(new ShowChildActivity(this, ToggleButtonActivity.class));
+    	showCheckboxButton.setOnClickListener(new ShowChildActivity(this, CheckboxActivity.class));
+    	showRadioGroupButton.setOnClickListener(new ShowChildActivity(this, RadioGroupActivity.class));
     }	
 
 }
