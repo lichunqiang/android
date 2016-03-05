@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <!-- android:layout_alignParentLeft="true" 子类控件相对当前父类容器靠左边 -->
+	<!-- android:layout_alignParentTop="true" 子类控件相对父类容器靠上边 -->
+	<!-- android:layout_marginLeft="39dp" 子类控件距离父容器左边的距离 -->
+	<!-- android:layout_marginTop="35dp" 子类控件距离父容器上边的距离 -->
+	<!-- android:layout_centerHorizontal="true" 子类控件相对父类容器水平居中 -->
+	<!-- android:layout_centerVertical="true" 子类控件相对父类容器垂直居中 -->
+    <Button
+        android:id="@+id/relative_button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="35dp"
+        android:text="Button1" />
+
+    <Button
+        android:id="@+id/relative_button2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_button1"
+        android:layout_toRightOf="@+id/relative_button1"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/relative_button3"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_button2"
+        android:layout_toRightOf="@+id/relative_button2"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/relative_button4"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Button4" />
+    
+    <Button
+        android:id="@+id/relative_button5"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Button5" />
+    
+    <Button
+        android:id="@+id/relative_button6"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="Button6" />
+
+</RelativeLayout>

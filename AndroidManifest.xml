@@ -63,6 +63,23 @@
            
         </activity>
         
+        <activity
+            android:name="com.light.news.layouts.LinearActivity"
+            android:label="线性布局" >
+           
+        </activity>
+         <activity
+            android:name="com.light.news.layouts.RelativeLayoutActivity"
+            android:label="相对布局" >
+           
+        </activity>
+        
+         <activity
+            android:name="com.light.news.layouts.GoodsLayout"
+            android:label="商品列表布局" >
+           
+        </activity>
+        
     </application>
 
 </manifest>
