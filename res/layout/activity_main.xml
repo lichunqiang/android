@@ -98,5 +98,20 @@ fill_parent: 当前控件铺满父类容器 - 2.3之前
             android:text="相对布局" />
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_show_listview_demo"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ListeView" />
+
+    </LinearLayout>
+
     
 </LinearLayout>

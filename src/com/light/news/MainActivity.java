@@ -1,14 +1,16 @@
 package com.light.news;
 
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.Button;
+
 import com.light.news.common.ShowChildActivity;
 import com.light.news.forms.CheckboxActivity;
 import com.light.news.forms.RadioGroupActivity;
 import com.light.news.layouts.LinearActivity;
 import com.light.news.layouts.RelativeLayoutActivity;
+import com.light.news.views.ListViewActivity;
 
-import android.app.Activity;
-import android.os.Bundle;
-import android.widget.Button;
 
 public class MainActivity extends Activity {
 	
@@ -19,6 +21,10 @@ public class MainActivity extends Activity {
 	private Button showRadioGroupButton;
 	private Button showLinearLayoutButton;
 	private Button showRelativeLayoutButton;
+	private Button showListeViewButton;
+	
+	//demos
+	private Button showSweetAlertButton;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +42,9 @@ public class MainActivity extends Activity {
         showRadioGroupButton = (Button) findViewById(R.id.btn_show_radio_group_button);
         showLinearLayoutButton = (Button) findViewById(R.id.btn_layout_line);
         showRelativeLayoutButton = (Button) findViewById(R.id.btn_layout_relative);
+        
+        //views
+        showListeViewButton = (Button) findViewById(R.id.btn_show_listview_demo);
         //init events.
         initEvents();
     }
@@ -48,6 +57,8 @@ public class MainActivity extends Activity {
     	showRadioGroupButton.setOnClickListener(new ShowChildActivity(this, RadioGroupActivity.class));
     	showLinearLayoutButton.setOnClickListener(new ShowChildActivity(this, LinearActivity.class));
     	showRelativeLayoutButton.setOnClickListener(new ShowChildActivity(this, RelativeLayoutActivity.class));
+    	
+    	showListeViewButton.setOnClickListener(new ShowChildActivity(this, ListViewActivity.class));
     }	
 
 }

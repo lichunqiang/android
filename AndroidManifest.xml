@@ -80,6 +80,11 @@
            
         </activity>
         
+         <activity 
+             android:name="com.light.news.views.ListViewActivity"
+             android:label="ListViewDemo">
+         </activity>
+        
     </application>
 
 </manifest>
