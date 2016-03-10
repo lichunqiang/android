@@ -11,6 +11,7 @@ import com.light.news.layouts.LinearActivity;
 import com.light.news.layouts.RelativeLayoutActivity;
 import com.light.news.views.GridViewActivity;
 import com.light.news.views.ListViewActivity;
+import com.light.news.widgets.SpinnerActivity;
 
 
 public class MainActivity extends Activity {
@@ -25,8 +26,7 @@ public class MainActivity extends Activity {
 	private Button showListeViewButton;
 	private Button showGridViewButton;
 	
-	//demos
-	private Button showSweetAlertButton;
+	private Button showSpinnerButton;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +48,9 @@ public class MainActivity extends Activity {
         //views
         showListeViewButton = (Button) findViewById(R.id.btn_show_listview_demo);
         showGridViewButton = (Button) findViewById(R.id.btn_show_gridview_demo);
+        
+        //widgets
+        showSpinnerButton = (Button) findViewById(R.id.btn_show_spinner_demo);
         //init events.
         initEvents();
     }
@@ -63,6 +66,8 @@ public class MainActivity extends Activity {
     	
     	showListeViewButton.setOnClickListener(new ShowChildActivity(this, ListViewActivity.class));
     	showGridViewButton.setOnClickListener(new ShowChildActivity(this, GridViewActivity.class));
+    	
+    	showSpinnerButton.setOnClickListener(new ShowChildActivity(this, SpinnerActivity.class));
     }	
 
 }

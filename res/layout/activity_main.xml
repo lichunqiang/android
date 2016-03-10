@@ -118,6 +118,13 @@ fill_parent: 当前控件铺满父类容器 - 2.3之前
             android:layout_height="wrap_content"
             android:text="GridView" />
 
+        <Button
+            android:id="@+id/btn_show_spinner_demo"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spinner" />
+
     </LinearLayout>
 
     

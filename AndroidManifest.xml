@@ -90,6 +90,11 @@
              android:name="com.light.news.views.GridViewActivity"
              android:label="GridViewDemo">
          </activity>
+         
+          <activity 
+             android:name="com.light.news.widgets.SpinnerActivity"
+             android:label="Spinner Demo">
+         </activity>
         
     </application>
 
