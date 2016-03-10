@@ -102,7 +102,7 @@ fill_parent: 当前控件铺满父类容器 - 2.3之前
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:orientation="horizontal" >
 
         <Button
             android:id="@+id/btn_show_listview_demo"
@@ -110,6 +110,13 @@ fill_parent: 当前控件铺满父类容器 - 2.3之前
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="ListeView" />
+
+        <Button
+            android:id="@+id/btn_show_gridview_demo"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GridView" />
 
     </LinearLayout>
 

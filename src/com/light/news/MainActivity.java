@@ -9,6 +9,7 @@ import com.light.news.forms.CheckboxActivity;
 import com.light.news.forms.RadioGroupActivity;
 import com.light.news.layouts.LinearActivity;
 import com.light.news.layouts.RelativeLayoutActivity;
+import com.light.news.views.GridViewActivity;
 import com.light.news.views.ListViewActivity;
 
 
@@ -22,6 +23,7 @@ public class MainActivity extends Activity {
 	private Button showLinearLayoutButton;
 	private Button showRelativeLayoutButton;
 	private Button showListeViewButton;
+	private Button showGridViewButton;
 	
 	//demos
 	private Button showSweetAlertButton;
@@ -45,6 +47,7 @@ public class MainActivity extends Activity {
         
         //views
         showListeViewButton = (Button) findViewById(R.id.btn_show_listview_demo);
+        showGridViewButton = (Button) findViewById(R.id.btn_show_gridview_demo);
         //init events.
         initEvents();
     }
@@ -59,6 +62,7 @@ public class MainActivity extends Activity {
     	showRelativeLayoutButton.setOnClickListener(new ShowChildActivity(this, RelativeLayoutActivity.class));
     	
     	showListeViewButton.setOnClickListener(new ShowChildActivity(this, ListViewActivity.class));
+    	showGridViewButton.setOnClickListener(new ShowChildActivity(this, GridViewActivity.class));
     }	
 
 }

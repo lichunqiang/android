@@ -84,6 +84,12 @@
              android:name="com.light.news.views.ListViewActivity"
              android:label="ListViewDemo">
          </activity>
+         
+         <activity 
+             android:theme="@android:style/Theme.Black.NoTitleBar"
+             android:name="com.light.news.views.GridViewActivity"
+             android:label="GridViewDemo">
+         </activity>
         
     </application>
 
