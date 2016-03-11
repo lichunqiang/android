@@ -28,6 +28,8 @@ public class MainActivity extends Activity {
 	
 	private Button showSpinnerButton;
 	
+	private Button showWebviewButton;
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +53,8 @@ public class MainActivity extends Activity {
         
         //widgets
         showSpinnerButton = (Button) findViewById(R.id.btn_show_spinner_demo);
+        
+        showWebviewButton = (Button) findViewById(R.id.btn_show_webview_demo);
         //init events.
         initEvents();
     }
@@ -68,6 +72,8 @@ public class MainActivity extends Activity {
     	showGridViewButton.setOnClickListener(new ShowChildActivity(this, GridViewActivity.class));
     	
     	showSpinnerButton.setOnClickListener(new ShowChildActivity(this, SpinnerActivity.class));
+    	
+    	showWebviewButton.setOnClickListener(new ShowChildActivity(this, WebViewActivity.class));
     }	
 
 }

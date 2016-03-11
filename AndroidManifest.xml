@@ -7,6 +7,7 @@
     <uses-sdk
         android:minSdkVersion="19"
         android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -94,6 +95,11 @@
           <activity 
              android:name="com.light.news.widgets.SpinnerActivity"
              android:label="Spinner Demo">
+         </activity>
+         
+          <activity 
+             android:name="com.light.news.WebViewActivity"
+             android:label="Webview Demo">
          </activity>
         
     </application>
