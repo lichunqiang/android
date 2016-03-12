@@ -117,6 +117,7 @@ fill_parent: 当前控件铺满父类容器 - 2.3之前-->
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="GridView" />
+    </LinearLayout>
 
         <Button
             android:id="@+id/btn_show_spinner_demo"
@@ -136,6 +137,12 @@ fill_parent: 当前控件铺满父类容器 - 2.3之前-->
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="WebView" />
+        <Button
+            android:id="@+id/btn_show_progressbar"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/progressbar" />
     </LinearLayout>
 
 </LinearLayout>

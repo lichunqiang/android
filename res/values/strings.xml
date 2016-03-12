@@ -7,5 +7,9 @@
     <string android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/string1" name="input_name_label">姓名啊</string>
     <string name="ok_button">确定</string>
     <string name="cancel_button">取消</string>
+    <string name="progressbar">进度条</string>
+    <string name="add">增加</string>
+    <string name="reduce">减少</string>
+    <string name="reset">重置</string>
 
 </resources>
